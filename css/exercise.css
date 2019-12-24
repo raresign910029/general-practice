@@ -1,0 +1,318 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.flex{
+    display: flex;
+}
+
+/*nav*/
+nav{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    
+
+}
+
+.Border{
+    width: 100%;
+    height: 100%;
+}
+#navbar .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url("./photo/LOGO.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav .link-btn .linktarget{
+list-style-type: none;
+
+}
+
+nav .link-btn ul li{
+    padding: 30px 5px;
+    background-color:  darkgray;
+    border: 2px solid black;
+}
+
+nav .link-btn ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: hsl(60, 94%, 81%);
+}
+
+
+
+/*page1*/
+
+main{
+    width: 100%;
+    height: 100%;
+   
+    
+    
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+
+#imageAndText .container.flex{
+    align-items: center;
+}
+
+.bg-bagle{
+    width: 50%;
+    height:100%;
+    background-image: url('./photo/bagle.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-bagle:hover{
+    background-image: url('./photo/shrimp.jpg');
+}
+
+.text{
+    width: 50%;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-align: justify;
+    font-size: 12pt;
+}
+
+
+
+
+/* page2 */
+
+#parallax {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./photo/shrimp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.text-parallax{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+}
+
+#parallax .mask.flex{
+    justify-content: center;
+    align-items: center;
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 233, 233, 0.6);
+}
+
+/*page3*/
+
+#tripple-Cards .container.flex{
+    align-items: center;
+}
+
+.small-container1{
+    width: 33%;
+    height: 80%;
+    background-color: aqua;
+}
+
+
+.small-container1 .sc1-1{
+    width: 100%;
+    height: 50%;
+    background-image: url(./photo/bagle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.small-container1 .sc1-2{
+    width: 100%;
+    height: 50%;
+}
+.small-container2{
+    width: 34%;
+    height: 80%;
+    background-color: pink;
+
+}
+.small-container2 .sc2-1{
+    width: 100%;
+    height: 50%;
+    background-image: url(./photo/soup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.small-container2 .sc2-2{
+    width: 100%;
+    height: 50%;
+}
+.small-container3{
+    width: 33%;
+    height: 80%;
+    background-color: yellowgreen;
+
+}
+
+.small-container3 .sc3-1{
+    width: 100%;
+    height: 50%;
+    background-image: url(./photo/shrimp.jpg);
+    background-size: cover;
+    background-position: center;
+}.small-container3 .sc3-2{
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+/*底部說明文字*/
+
+footer .container.flex{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+footer span{
+    font-size: 20pt;
+    color: red;
+}
+
+/*以下為小螢幕NAV*/
+
+@media screen and (max-width: 991px){
+    #nav-logo{
+        display: none;
+    }
+    nav .linkbtn{
+        display: none;
+    }
+
+    .link-btn {
+        width: 40px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        background-image: url('./photo/menu.png');
+        background-size: cover;
+        border: 2px solid black;
+        margin: 0px 0 10px 15px;
+        position: relative;
+
+    }
+    nav .linktarget{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 108px;
+        left:0;
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+
+    nav .linktarget li a{
+        text-decoration:none;
+        
+    }
+    
+
+    nav .link-btn:hover .linktarget{
+        display: flex;
+    }
+
+/*小螢幕 page1*/
+
+    #imageAndText .container.flex{
+        flex-direction: column;
+    }
+
+
+    /*上文下圖*/
+    .bg-bagle{
+        width: 100%;
+        height:50%;
+        order:2
+    }
+
+    .text{
+        width: 100%;
+        order:1
+    }
+
+
+/*page 2*/
+    .text-parallax{
+        display: none;
+    }
+
+/*page 3*/
+    #tripple-Cards .container.flex{
+        flex-wrap: wrap;
+    }
+    .small-container1{
+        width: 100%;
+        height: 33%;
+        background-color: aqua;
+    }
+
+    .small-container2{
+        width: 100%;
+        height: 34%;
+        background-color: pink;
+    }
+
+    .small-container3{
+        width: 100%;
+        height: 33%;
+        background-color: yellowgreen;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+}
+
