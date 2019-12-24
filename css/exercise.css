@@ -41,7 +41,7 @@ nav{
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background-image: url("./photo/LOGO.jpg");
+    background-image: url("../photo/LOGO.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -88,13 +88,13 @@ section{
 .bg-bagle{
     width: 50%;
     height:100%;
-    background-image: url('./photo/bagle.jpg');
+    background-image: url('../photo/bagle.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .bg-bagle:hover{
-    background-image: url('./photo/shrimp.jpg');
+    background-image: url('../photo/shrimp.jpg');
 }
 
 .text{
@@ -113,7 +113,7 @@ section{
 #parallax {
     width: 100%;
     height: 100vh;
-    background-image: url('./photo/shrimp.jpg');
+    background-image: url('../photo/shrimp.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -155,7 +155,7 @@ section{
 .small-container1 .sc1-1{
     width: 100%;
     height: 50%;
-    background-image: url(./photo/bagle.jpg);
+    background-image: url(../photo/bagle.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -173,7 +173,7 @@ section{
 .small-container2 .sc2-1{
     width: 100%;
     height: 50%;
-    background-image: url(./photo/soup.jpg);
+    background-image: url(../photo/soup.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -191,7 +191,7 @@ section{
 .small-container3 .sc3-1{
     width: 100%;
     height: 50%;
-    background-image: url(./photo/shrimp.jpg);
+    background-image: url(../photo/shrimp.jpg);
     background-size: cover;
     background-position: center;
 }.small-container3 .sc3-2{
@@ -229,7 +229,7 @@ footer span{
         height: 100px;
         background-color: rgba(0, 0, 0, 0);
         display: flex;
-        background-image: url('./photo/menu.png');
+        background-image: url('../photo/menu.png');
         background-size: cover;
         border: 2px solid black;
         margin: 0px 0 10px 15px;
